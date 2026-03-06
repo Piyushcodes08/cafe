@@ -19,7 +19,7 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-24 bg-background">
+    <section id="gallery" className="lg:py-24 py-12 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="font-body text-sm font-semibold text-primary uppercase tracking-widest">

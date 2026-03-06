@@ -61,7 +61,7 @@ export default function Contact() {
     "w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 transition";
 
   return (
-    <section id="contact" className="py-28 bg-card">
+    <section id="contact" className="lg:py-28 py-14 bg-card">
       <div className="container mx-auto px-6">
 
         {/* Heading */}

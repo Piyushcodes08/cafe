@@ -47,7 +47,7 @@ const menuItems = [
 
 export default function Menu() {
   return (
-    <section id="menu" className="py-24 bg-card">
+    <section id="menu" className="lg:py-24 py-12 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="font-body text-sm font-semibold text-primary uppercase tracking-widest">

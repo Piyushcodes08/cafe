@@ -28,7 +28,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-28 bg-background relative overflow-hidden">
+    <section id="faq" className="lg:py-28 py-14 bg-background relative overflow-hidden">
 
       {/* decorative background */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-primary/10 blur-3xl rounded-full"></div>
