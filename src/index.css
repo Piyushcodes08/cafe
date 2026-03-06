@@ -102,7 +102,9 @@ body{
     font-family: var(--font-display);
   }
 }
-
+body{
+  overflow-x: hidden;
+}
 @layer utilities {
   .font-display {
     font-family: var(--font-display);
