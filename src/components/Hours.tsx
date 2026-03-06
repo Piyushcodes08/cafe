@@ -22,7 +22,7 @@ const cards = [
 
 export default function Hours() {
   return (
-    <section className="lg:py-28 lg-14 bg-card relative overflow-hidden">
+    <section className="lg:py-28 py-14 bg-card relative overflow-hidden">
 
       {/* decorative background blur */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-primary/10 blur-3xl rounded-full"></div>
