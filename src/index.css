@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  overflow-x: hidden;
+}
+@layer base {
+  :root {
+    --background: 37 47% 97%;
+    --foreground: 24 25% 14%;
+
+    --card: 37 40% 95%;
+    --card-foreground: 24 25% 14%;
+
+    --popover: 37 47% 97%;
+    --popover-foreground: 24 25% 14%;
+
+    --primary: 6 78% 65%;
+    --primary-foreground: 37 47% 97%;
+
+    --secondary: 145 35% 42%;
+    --secondary-foreground: 37 47% 97%;
+
+    --muted: 37 30% 90%;
+    --muted-foreground: 24 15% 45%;
+
+    --accent: 40 95% 62%;
+    --accent-foreground: 24 25% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 37 25% 85%;
+    --input: 37 25% 85%;
+    --ring: 6 78% 65%;
+
+    --radius: 0.75rem;
+
+    --tropical-pink: 340 72% 70%;
+    --tropical-teal: 175 45% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --shadow-soft: 0 4px 20px -4px hsl(24 25% 14% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(24 25% 14% / 0.1);
+    --shadow-elevated: 0 16px 50px -12px hsl(24 25% 14% / 0.15);
+  }
+
+  .dark {
+    --background: 24 20% 8%;
+    --foreground: 37 47% 95%;
+    --card: 24 18% 12%;
+    --card-foreground: 37 47% 95%;
+    --popover: 24 18% 12%;
+    --popover-foreground: 37 47% 95%;
+    --primary: 6 78% 65%;
+    --primary-foreground: 37 47% 97%;
+    --secondary: 145 35% 42%;
+    --secondary-foreground: 37 47% 97%;
+    --muted: 24 15% 18%;
+    --muted-foreground: 37 20% 60%;
+    --accent: 40 95% 62%;
+    --accent-foreground: 24 25% 14%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 24 15% 20%;
+    --input: 24 15% 20%;
+    --ring: 6 78% 65%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
